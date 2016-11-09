@@ -503,7 +503,6 @@ var ul=$("#list-m ul");
 		return false;
 	})
 //歌词运动
-			//歌词处理
 		function lyric_ctrl()
 		{
 			var lyricObj=musics[currentIndex].content;

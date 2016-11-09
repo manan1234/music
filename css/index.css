@@ -83,7 +83,6 @@ body {
 
 body {
   background: #efeee3;
-  overflow: hidden;
   position: relative; }
 
 #player {
@@ -718,7 +717,7 @@ body {
           border: 1px solid #cecece;
           background: #fff;
           position: absolute;
-          left: -0.16rem;
+          right: -0.16rem;
           top: 0.04rem; }
       #volume-page-main #volume-x #volume-xm div:nth-of-type(3) {
         float: right;

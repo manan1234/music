@@ -13,7 +13,6 @@
 $bg-color:#efeee3;
 body{
     background: $bg-color;
-    overflow: hidden;
     position: relative;
 }
 #player{
@@ -723,7 +722,7 @@ body{
                     border:1px solid #cecece;
                     background: #fff;
                     position: absolute;
-                    left: -0.16rem;
+                    right: -0.16rem;
                     top:0.04rem;
 //                  z-index: 52;
                 }
