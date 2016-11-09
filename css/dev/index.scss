@@ -264,10 +264,26 @@ body{
     #word{
         @include box1(5.5rem,5.6rem);
         margin:0.8rem auto 0 auto;
-        img{
-            width: 5.5rem;
-            height:5.6rem;
+        overflow: hidden;
+        position: relative;
+        .lyric2 {
+          width: 100%;
+          height: auto;
+          color: red;
+          left: 0;
+          top: 0.6rem;
+          box-sizing: border-box;
+          position: absolute;
+          text-align: center;
+          overflow: hidden; 
         }
+        .lyric2 p {
+      font-size: 0.3rem;
+      width: 100%;
+      height: auto;
+      line-height: 0.6rem;
+      text-align: center;
+      color: #a7a1a1; }
     }
     //弹幕
     #barrage{

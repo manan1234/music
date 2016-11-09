@@ -719,7 +719,7 @@ body {
           background: #fff;
           position: absolute;
           left: -0.16rem;
-          top: -0.08rem; }
+          top: 0.04rem; }
       #volume-page-main #volume-x #volume-xm div:nth-of-type(3) {
         float: right;
         height: 100%;
