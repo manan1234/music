@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width">
+		
+	<!-- Add to homescreen for Safari on Ios -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="todo">
+	<link rel="apple-touch-icon" href="1.png">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="music">
+    <meta name="theme-color" content="#2F3BA2">
+    <link rel="icon" sizes="192x192" href="1.png">
+
+	<title>app</title>
+	<link rel="stylesheet" type="text/css" href="./css/index.css"/>
+	<script src="js/jquery.js"></script>
+	<script src="js/index.js"></script>
+</head>
+<body>
+<!--播放页面-->
+<div id="player">
+	<div id="ple">
+<!--header-->
+	<div id="header">
+		<div id="h-left">&#xe60f;</div>
+		<div id="h-right">&#xe6de;</div>
+	</div>
+<!--黑胶唱片-->
+	<div id="b-re">
+		<img src="./imgs/1.png" alt="" id="im1" />
+		<img src="./imgs/2.png" alt="" id="im2" />
+	</div>
+<!--进度条-->
+	<div class="jd" >
+		<!--<img src="./imgs/3.png" alt="" />-->
+		<div class="zjd" id="progress">
+			<div class="jdt" id="p-i"></div>
+		</div>
+		<div id="xian"></div>
+		
+	</div>
+<!--按键-->
+	<div id="aj">
+		<div class="an1">
+			<div class="a1"></div>
+			<div id="play">&#xe778;</div>
+		</div>
+		<div class="an1">
+			<div class="a1"></div>
+			<div id="bb">&#xe611;</div>
+		</div>
+		<div class="an1">
+			<div class="a1"></div>
+			<div id="aa">&#xe610;</div>
+		</div>
+	</div>
+</div>
+<!--音乐播放-->
+	<div id="words-list">
+		<div id="header1">
+			<div id="h-left1">&#xe62c;</div>
+			<div class="title" id="">不说再见</div>
+			<div id="h-right1">&#xe7f0;</div>
+		</div>
+		<!--歌手-->
+		<div id="singer">好妹妹乐队</div>
+		<!--歌曲品质-->
+		<div id="quality">
+			<div class="quality">流畅 &#xe60f;</div>
+			<div class="quality">独家</div>
+			<div class="quality">音效</div>
+		</div>
+		<!--歌词-->
+		<div id="word">
+			<img src="./imgs/word.png" alt="" />
+		</div>
+		<!--弹幕-->
+		<div id="barrage">&#xe613;</div>
+		<!--进度条-->
+		<div id="bar">
+			<div id="currenttime">00:00</div>
+			<div id="prog">
+				<div id="pi"></div>
+			</div>
+			<div id="prog1"></div>
+			<div id="duration"></div>
+		</div>
+		<!--点击按钮-->
+		<div id="btn">
+			<div class="btn-l">&#xe610;</div>
+			<div class="btn-p">&#xe778;</div>
+			<div class="btn-r">&#xe611;</div>
+		</div>
+		<!--收藏-->
+		<div id="collection">
+			<div class="collection">&#xe665;</div>
+			<div class="collection">&#xe606;</div>
+			<div class="collection">&#xe636;</div>
+			<div class="collection">&#xe603;</div>
+			<div class="collection">&#xe612;</div>
+		</div>
+	</div>
+<!--歌词列表-->
+	<div id="music-list"></div>
+	<div id="list-m">
+		<div id="del-list">
+			<span>&#xe606;</span>
+			<span>播放顺序</span>
+			<span>(12首)</span>
+			<span>&#xe62b;</span>
+			<span>&#xe615;</span>
+			<span>&#xe636;</span>
+		</div>
+		<ul></ul>
+		<div id="t-mic">+添加歌曲到队列</div>
+		<div id="close">关闭</div>
+	</div>
+<!--歌词添加列表-->
+	<div id="raise">
+		<div id="header2">
+			<div id="h-left2">&#xe62c;</div>
+			<div class="title1" id="">本地歌曲</div>
+			<div id="h-right2">关闭</div>
+		</div>
+		<ul class="song-list">
+			<li data-v='{"name":"别咬我","author":"许嵩","src":"许嵩 - 别咬我.mp3","duration":"4:30"}' class="song">
+				<h4>别咬我</h4>
+				<p>许嵩</p>
+			</li>
+			<li data-v='{"name":"小幸运","author":"谭嘉仪","src":"谭嘉仪 - 小幸运.mp3","duration":"4:30"}' class="song">
+				<h4>小幸运</h4>
+				<p>谭嘉仪</p>
+			</li>
+		</ul>
+	</div>
+<!--音量-->
+	<div id="volume-page"></div>
+	<div id="volume-page-main">
+		<div id="react">
+			<p>小幸运</p>
+			<h4>该歌曲信息为智能匹配结果</h4>
+		</div>
+		<div class="tubiao">
+			<div class="tubiao-main">
+				<ul>
+					<li>
+						<div class="fan">&#xe636;</div>
+						<p>下载</p>
+					</li>
+					<li>
+						<div class="fan">&#xe603;</div>
+						<p>分享</p>
+					</li>
+					<li>
+						<div class="fan">&#xe62b;</div>
+						<p>删除</p>
+					</li>
+					<li>
+						<div class="fan">&#xe621;</div>
+						<p>评论</p>
+					</li>
+					<li>
+						<div class="fan">&#xe600;</div>
+						<p>唱这首歌</p>
+					</li>
+				</ul>
+			</div>	
+		</div>
+		<div class="tubiao">
+			<div class="tubiao-main1">
+				<ul>
+					<li>
+						<div class="fan">&#xe6c9;</div>
+						<p>播放MV</p>
+					</li>
+					<li>
+						<div class="fan">&#xe6de;</div>
+						<p>百变播放器</p>
+					</li>
+					<li>
+						<div class="fan">&#xe6dc;</div>
+						<p>歌词海报</p>
+					</li>
+					<li>
+						<div class="fan">&#xe87c;</div>
+						<p>设置铃声</p>
+					</li>
+					<li>
+						<div class="fan">&#xe604;</div>
+						<p>背景音乐</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="volume-x">
+			<div id="volume-xm">
+				<div id="mute">&#xe63b;</div>
+				<div id="volume">
+					<div id="v-i"></div>
+				</div>
+				<div>横屏</div>
+			</div>
+		</div>
+		<div id="quxiao">取消</div>
+	</div>
+</div>
+<!--音乐-->
+<audio src="陈奕迅 - 不要说话.mp3"></audio>
+
+
+	
+</body>
+</html>
