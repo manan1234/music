@@ -18,7 +18,7 @@ body{
 }
 #player{
     width: 100%;
-    height:12.46rem;
+    height:12.02rem;
     overflow: hidden;
     position: absolute;
     left: 0;
@@ -26,7 +26,7 @@ body{
 }
 #ple{
     width: 100%;
-    height:12.46rem;
+    height:12.02rem;
 }
 //header
 #header{
@@ -195,7 +195,7 @@ body{
 //歌词列表页
 #words-list{
     width: 100%;
-    height:12.46rem;
+    height:12.02rem;
     position: absolute;
     left: 0;
     top: 0;
@@ -262,7 +262,7 @@ body{
         }
     }
     #word{
-        @include box1(5.5rem,5.6rem);
+        @include box1(5.5rem,5.16rem);
         margin:0.8rem auto 0 auto;
         overflow: hidden;
         position: relative;
@@ -410,7 +410,7 @@ body{
 //歌词列表
 #music-list{
     width: 100%;
-    height:12.46rem;
+    height:12.02rem;
     background: rgba(116,117,111,0.7);
     position: absolute;
     left: 0;
@@ -600,7 +600,7 @@ body{
     left: 0;
     top: 0;
     width:100%;
-    height:12.46rem ;
+    height:12.02rem ;
     z-index: 50;
     background: rgba(117,118,112,0.8);
     display: none;
