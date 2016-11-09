@@ -302,10 +302,26 @@ body {
   #words-list #word {
     width: 5.5rem;
     height: 5.6rem;
-    margin: 0.8rem auto 0 auto; }
-    #words-list #word img {
-      width: 5.5rem;
-      height: 5.6rem; }
+    margin: 0.8rem auto 0 auto;
+    overflow: hidden;
+    position: relative; }
+    #words-list #word .lyric2 {
+      width: 100%;
+      height: auto;
+      color: red;
+      left: 0;
+      top: 0.6rem;
+      box-sizing: border-box;
+      position: absolute;
+      text-align: center;
+      overflow: hidden; }
+    #words-list #word .lyric2 p {
+      font-size: 0.3rem;
+      width: 100%;
+      height: auto;
+      line-height: 0.6rem;
+      text-align: center;
+      color: #a7a1a1; }
   #words-list #barrage {
     width: 100%;
     height: 0.48rem;
@@ -703,7 +719,7 @@ body {
           background: #fff;
           position: absolute;
           left: -0.16rem;
-          top: 0.04rem; }
+          top: -0.08rem; }
       #volume-page-main #volume-x #volume-xm div:nth-of-type(3) {
         float: right;
         height: 100%;
